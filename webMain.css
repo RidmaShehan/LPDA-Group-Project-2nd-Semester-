@@ -1,0 +1,227 @@
+ 
+
+body
+{
+      display: flex;
+      min-height: 100vh;
+      justify-content: flex-end;
+      align-items: flex-end;
+      min-height: 100vh;
+      background: black;
+}
+
+.nav{
+      position: relative;
+      margin:270px  auto 0;
+      width: 590px;
+      height: 50px;
+      background: #34495e;
+      border-radius: 8px;
+      font-size: 0;
+      box-shadow: 0 2px 3px 0 rgba(0 ,0, 0, 1);
+}
+
+.nav a {
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  line-height: 50px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  text-align: center;
+}
+
+nav .animation{
+  position: absolute;
+  height: 5px;
+  bottom:  0;
+  z-index: 0;
+  background: #1abc9c;
+  width: 100px;
+  border-radius: 8px;
+  transition: all .5s ease 0s;
+}
+
+a:nth-child(1){
+  width: 100px;
+}
+nav .start-home,a:nth-child(1):hover~ .animation{
+  width:100px ;
+  left: 0;
+}
+
+a:nth-child(2){
+  width: 110px;
+}
+
+nav .start-About,a:nth-child(2):hover~ .animation{
+  width:110px ;
+  left: 100;
+}
+a:nth-child(3){
+  width: 100px;
+}
+nav .start-Services,a:nth-child(3):hover~ .animation{
+  width:100px ;
+  left: 210;
+}
+
+a:nth-child(4){
+  width: 160px;
+}
+
+nav .start-Team,a:nth-child(4):hover~ .animation{
+  width: 16px ;
+  left: 310px;
+}
+
+a:nth-child(5){
+  width: 120px;
+}
+nav .start-Contract,a:nth-child(5):hover~ .animation{
+  width:120px ;
+  left: 470;
+}
+
+footer
+{
+    position: relative;
+    width: 100%;
+    background: rgb(33, 32, 32);
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+footer .social-icon,
+footer .menu
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px ;
+    flex-wrap: wrap;
+}
+
+footer .social-icon li,
+footer .menu  li
+{
+    list-style: none;
+}
+
+footer .social-icon li a 
+
+{
+  font-size: 2em;
+  color: white;
+  margin: 0 10px;
+  display: inline-block;
+  transition:  0.5s;
+}
+
+footer .social-icon li a:hover
+{
+    transform: translateY(-10px);
+}
+
+footer .menu li a
+{
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  margin: 0 10px;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0.75;
+}
+footer .menu li a:hover
+{
+  
+  opacity: 1;
+}
+
+footer p
+{
+    color: aliceblue;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    
+}
+
+footer .wave
+{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background:  url(wave.png);
+    background-size: 1000px;
+}
+
+footer .wave#wave1
+{
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2
+{
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animateWave_02 4s linear infinite;
+}
+
+footer .wave#wave3
+{
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4
+{
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animateWave_02 3s linear infinite;
+}
+
+
+@keyframes animateWave
+{
+  0%
+  {
+    background-position-x: 1000px; 
+  }
+  100%
+  {
+    background-position-x: 0px;
+  }
+}
+
+@keyframes animateWave_02
+{
+  0%
+  {
+    background-position-x: 0px; 
+  }
+  100%
+  {
+    background-position-x: 1000px;
+  }
+}
