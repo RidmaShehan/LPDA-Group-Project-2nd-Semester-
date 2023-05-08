@@ -11,6 +11,7 @@ body
 }
 
 .nav{
+      display: inline-block;
       position: relative;
       margin:270px  auto 0;
       width: 590px;
@@ -51,39 +52,6 @@ a:nth-child(1){
 nav .start-home,a:nth-child(1):hover~ .animation{
   width:100px ;
   left: 0;
-}
-
-a:nth-child(2){
-  width: 110px;
-}
-
-nav .start-About,a:nth-child(2):hover~ .animation{
-  width:110px ;
-  left: 100;
-}
-a:nth-child(3){
-  width: 100px;
-}
-nav .start-Services,a:nth-child(3):hover~ .animation{
-  width:100px ;
-  left: 210;
-}
-
-a:nth-child(4){
-  width: 160px;
-}
-
-nav .start-Team,a:nth-child(4):hover~ .animation{
-  width: 16px ;
-  left: 310px;
-}
-
-a:nth-child(5){
-  width: 120px;
-}
-nav .start-Contract,a:nth-child(5):hover~ .animation{
-  width:120px ;
-  left: 470;
 }
 
 footer
